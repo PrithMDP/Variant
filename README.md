@@ -6,6 +6,8 @@ https://en.cppreference.com/w/cpp/utility/variant
 Some differences are:
   - Only single instance of a type `T` is allowed.
   - No `std::monostate` default construction support
+  
+Doing the above will result in UB.
 
 
 ## How it works
