@@ -103,6 +103,7 @@ struct Var
         {
             T* ptr = reinterpret_cast<T*>(&data);
             ptr->~T();
+            return;
         }
         index_to_type<VArgs...>(start_size, idx);
     }
